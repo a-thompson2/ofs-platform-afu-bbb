@@ -200,8 +200,4 @@ probeForASE(const t_target_bdf *bdf)
     is_ase_sim = (FPGA_OK == r) && (0xa5e == device_id);
     ase_check_complete = true;
     return is_ase_sim;
-
-  out_destroy:
-    fpgaDestroyProperties(&filter);
-    return false;
 }
