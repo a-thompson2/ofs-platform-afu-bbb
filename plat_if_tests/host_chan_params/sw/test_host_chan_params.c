@@ -1332,6 +1332,7 @@ testHostChanLatency(
                     else printf("one write+others read\n");
                 }
 
+                assert(0 < num_readers);
                 assert(0 < num_writers);
                 printLatencyAndBandwidth(num_engines, engine_mask, max_reqs,
                                          num_readers, num_writers,
